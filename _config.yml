@@ -1,55 +1,36 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 기본 정보 설정
+title: "Root's devlog"
+author:
+  name: "juhyeonlee"
+  email: "griiim134@gmail.com"
+description: "포트폴리오, 프로젝트, 스터디 등을 기록하는 공간"
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# URL 설정
+url: "https://juhyeonlee134.github.io"
+baseurl: ""  # 서브 경로가 있는 경우만 설정 (예: "/blog")
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# 테마 설정
+theme: minima  # 기본 테마
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# 포스트 관련 설정
+permalink: /:year/:month/:day/:title/  # URL 구조
+show_excerpts: true  # 포스트 목록에서 발췌문 표시 여부
+
+# 시간대 설정
+timezone: Asia/Seoul
+
+# 페이지네이션 설정
+paginate: 5  # 한 페이지당 표시할 포스트 수
+paginate_path: "/page:num/"
+
+# 빌드 설정
+markdown: kramdown  # 마크다운 엔진
+exclude:            # 빌드시 제외할 파일/폴더
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# 소셜 미디어 링크 (선택사항)
+social_links:
+  github: juhyeonlee134
