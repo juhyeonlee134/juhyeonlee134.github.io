@@ -1,11 +1,11 @@
 ---
 layout: page
-title: /project
-permalink: categories/project/
-category: project
+title: /cs
+permalink: categories/cs/
+category: cs
 ---
 
-## project
+## computer science
 
 {% for post in site.categories[page.category] %}
   <div class="post-preview">

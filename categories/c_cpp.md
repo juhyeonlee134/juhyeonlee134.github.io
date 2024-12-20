@@ -1,11 +1,11 @@
 ---
 layout: page
-title: /study
-permalink: categories/study/
-category: study
+title: /c_cpp
+permalink: categories/c_cpp/
+category: c_cpp
 ---
 
-## study
+## c/c++
 
 {% for post in site.categories[page.category] %}
   <div class="post-preview">

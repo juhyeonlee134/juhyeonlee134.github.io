@@ -1,14 +1,17 @@
-#google_analytics: UA-NNNNNNNN-N
+google_analytics: UA-NNNNNNNN-N
 
 header_pages:
   - index.md
   - categories/about.md
-  - categories/project.md
-  - categories/study.md
+  - categories/cs.md
+  - categories/c_cpp.md
+  - categories/unity.md
 
 footer: 'Visit my <a href="https://github.com/juhyeonlee134">Github</a>'
 
 style: dark
+
+permalink: /:title/
 
 plugins:
   - jekyll-seo-tag
