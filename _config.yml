@@ -1,36 +1,15 @@
-# 기본 정보 설정
-title: "Root's devlog"
-author:
-  name: "juhyeonlee"
-  email: "griiim134@gmail.com"
-description: "포트폴리오, 프로젝트, 스터디 등을 기록하는 공간"
+#google_analytics: UA-NNNNNNNN-N
 
-# URL 설정
-url: "https://juhyeonlee134.github.io"
-baseurl: ""  # 서브 경로가 있는 경우만 설정 (예: "/blog")
+header_pages:
+  - index.md
+  - about.md
+  - C_C++.md
+  - CS.md
+  - Unity.md
 
-# 테마 설정
-theme: minima  # 기본 테마
+footer: 'Visit my <a href="https://github.com/juhyeonlee134">Github</a>'
 
-# 포스트 관련 설정
-permalink: /:year/:month/:day/:title/  # URL 구조
-show_excerpts: true  # 포스트 목록에서 발췌문 표시 여부
+style: dark)
 
-# 시간대 설정
-timezone: Asia/Seoul
-
-# 페이지네이션 설정
-paginate: 5  # 한 페이지당 표시할 포스트 수
-paginate_path: "/page:num/"
-
-# 빌드 설정
-markdown: kramdown  # 마크다운 엔진
-exclude:            # 빌드시 제외할 파일/폴더
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-
-# 소셜 미디어 링크 (선택사항)
-social_links:
-  github: juhyeonlee134
+plugins:
+  - jekyll-seo-tag
